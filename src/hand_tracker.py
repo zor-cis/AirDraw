@@ -15,3 +15,18 @@ class HandTracker:
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb_frame)
         return self.detector.detect(mp_image)
+    
+    def get_landmarks(self, result):
+        if not result.hand_landmarks:
+            return None
+        return result.hand_landmarks[0]
+    
+    def get_index_position(self, landmarks, frame):
+        height, width = frame.shape[:2]
+        index_tip = landmarks[8]
+
+        x = int(index_tip.x * width)
+        y = int(index_tip.y * height)
+
+        return (x, y)
+        

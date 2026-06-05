@@ -17,8 +17,8 @@ AirDraw/
 | --------------------- | ------------------------------ |
 |  main.py              | Orquestar la aplicación        |
 |  webcam.py            | Abrir y gestionar la webcam    |
-| `hand_tracker.py`     | Detectar la mano con MediaPipe |
-| `gesture_detector.py` | Detectar gestos (pinch, etc.)  |
-| `canvas.py`           | Gestionar el lienzo de dibujo  |
-| `particle_system.py`  | Gestionar partículas           |
+|  hand_tracker.py      | Detectar la mano con MediaPipe |
+|  gesture_detector.py  | Detectar gestos (pinch, etc.)  |
+|  canvas.py            | Gestionar el lienzo de dibujo  |
+|   particle_system.py  | Gestionar partículas           |
 | `renderer.py`         | Dibujar todo en pantalla       |
